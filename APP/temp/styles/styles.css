@@ -1,0 +1,307 @@
+body {
+	padding: 0;
+	background-image: url("bgdfood.svg");
+	background-repeat: repeat;
+	background-size: 150px;
+	color: f7f7f7;
+}
+header {
+	background-color: #FF0000;
+	width: 80%;
+	border-width: 0px 2px 2px 2px;
+	border-style: solid;
+	height: 14%;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	left: 10%;
+}
+header h1 {
+	color: #EAA521;
+	font-size: 3.5em;
+	position: absolute;
+	top: -10%;
+	left: 12%;
+}
+header a {
+	
+	text-decoration: none;
+}
+.headerimg {
+		width: 12%;
+		float:left;
+	}
+/* Navigation  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+nav {
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+}
+nav li {
+	list-style-type: none;
+	float: left;
+}
+nav li a {
+	padding: 5px 10px 5px 2px;
+	background-color:#f7f7f7;
+	text-decoration: none;
+	color: #EA2621;
+	font-size: 20px;
+	font-weight: bold;
+	margin-right: 15px;
+	border: 1px solid;
+	border-left: 8.5px solid #EAA521;
+	border-radius: 10px;
+}
+nav li a:hover {
+	color: #94773F;
+	background: linear-gradient(rgba(200,200,200,0.7), #f7f7f7);
+}
+aside {
+	position: absolute;
+	right: 2%;
+	bottom: 4%;
+}
+aside a{
+	padding: 5px 10px 5px 2px;
+	background-color: #fff;
+	text-decoration: none;
+	color: #EA2621;
+	font-size: 20px;
+	font-weight: bold;
+	margin-right: 15px;
+	border: 1px solid;
+	border-left: 8.5px solid #E08F00;
+	border-radius: 10px 10px 0 0;
+}
+aside a:hover {
+	color: #94773F;
+	background: linear-gradient(rgba(200,200,200,0.7), #f7f7f7);
+}
+/* Filter button ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.filter {
+	display:none;
+	position: absolute;
+	width: 469px;
+	background-color: #E08F00;
+	border-width: 0px 2px 2px 2px;
+	border-style: solid;
+	border-color: black;
+	padding: 0px 2px 2px 2px;
+	border-radius: 0px 0px 2px 2px;
+	bottom: -31px;
+	right: 15px;
+}
+.active {
+	background-color: #EA2621;
+	border-left: 8.5px solid #fff;
+	color: #fff;
+}
+main {
+	background-color: #f7f7f7;
+	color: #34435B;
+	border-radius: 10px;
+	width: 80%;
+	margin: 10% auto 0 auto;
+}
+article {
+	width: 43%;
+	min-height: 300px;
+	color: #EA2621;
+	float: left;
+	padding: 1%;
+	margin: 2%;
+	margin-top: 10px;
+	border: 1px solid #EA2621;
+	border-radius: 15px;
+	background-color:rgba(200,200,200, 0.4);
+}
+article:hover {
+	cursor: pointer;
+	background: radial-gradient(rgba(200,200,200,0), rgba(200,200,200, 0.4));
+}
+section {
+	padding: 10px;
+}
+hr {
+	clear:left;
+}
+h1 {
+	border-bottom: 5px solid #E00000;
+}
+.mealpic {
+	width: 40%;
+	border: 4px solid red;
+	border-radius: 15px;
+	margin: 15px;
+	float:left;
+}
+h3 {
+	clear: left;
+	
+}
+footer {
+	clear: both;
+	background-color: #FF0000;
+	color: #f7f7f7;
+	padding-bottom: 2px;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+br {
+	clear: both;
+}
+.hide {
+	display:none;
+}
+/* Checkbox/Radio style --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+input[type=radio] + label, input[type=checkbox]  + label{
+   cursor: pointer;
+   margin-right: 20px;
+   font-size: 16pt;
+}
+/* Hide radio button */
+input[type=radio], input[type=checkbox] { 
+    position: absolute; 
+    height: 1px;
+    width: 1px;
+    clip: rect(0 0 1 1); 
+}
+input[type=radio] + label::before {
+   border-radius: 10px;   
+}
+input[type=radio] + label::before, input[type=checkbox] + label::before {
+    content: "\00a0";   /* Non-breaking space */
+    display: inline-block; 
+    width: 16px;
+    height: 16px;  
+    text-align: center;
+    line-height: 1em;
+    font-size: 0.8em; 
+    margin-right: 10px;
+    border: 0.125em solid white;   /* to push focus shadow away */
+    background-color: #aaa;
+}
+input[type=checkbox]:checked + label::before {
+   content: "\2713";  /* Checkmark */
+   color: white;
+   background: green;      
+}
+input[type=radio]:checked + label::before {
+    content: "\2022";
+    color: green;
+    background: green;
+}
+input[type=radio]:focus + label::before, input[type=checkbox]:focus + label::before {
+    box-shadow: 0 0 0 1px gray;
+}
+/* Form  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+h1.contact {
+	margin-top: 10px;
+}
+form {
+	padding: 20px;
+	float:left;
+	margin-left: 10%;
+}
+input[type=text], input[type=email], textarea{
+	width: 250px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 5px;
+}
+input[type=text]:focus, input[type=email]:focus{
+	border-radius: 10px;
+}
+label {
+	width: 85px;
+	display: inline-block;
+}
+#contact-info {
+	width:40%;
+	float: right;
+	margin: 20px;
+	font-size: 25px;
+	margin-right: 10%;
+}
+button[type=submit] {
+	width: 200px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #f7f7f7;
+	margin-left: 75px
+		;
+}
+/* Smaller Screens ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1050px) {
+	header {
+	background-color: #FF0000;
+	width: 80%;
+	border-width: 0px 2px 2px 2px;
+	border-style: solid;
+	height: 5%;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	left: 10%;
+}
+header h1 {
+	border:#DBA548;
+	color: #000000;
+	font-size: 1.5em;
+	position: absolute;
+	top: -10%;
+	left: 12%;
+}
+
+.headerimg {
+		width: 12%;
+		float:left;
+	}
+	
+/* Navigation  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	
+nav {
+	position: absolute;
+	bottom: 15%;
+	right: 12%;
+}
+nav li {
+	list-style-type: none;
+	float: left;
+}
+nav li a {
+	padding: 5px 10px 5px 2px;
+	background-color: #fff;
+	text-decoration: none;
+	color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+	margin-right: 15px;
+	border: 1px solid;
+	border-left: 8.5px solid #000000;
+	border-radius: 10px;
+}
+nav li a:hover {
+	color: #2A2922;
+	border-left-color: #2A2922;
+}
+	
+	
+	
+}
+@media screen and (max-width: 472px) {
+ header {
+	 float: none;
+	 margin: 0 auto;
+	 display: block;
+ }
+ nav {
+	 float: none;
+	 margin: 0 auto;
+	 margin: 20px;
+ }   
+
+
+}
