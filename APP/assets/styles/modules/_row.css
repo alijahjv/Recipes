@@ -1,0 +1,22 @@
+.row {
+
+}
+.col{
+    float: left;
+
+    &_tres {
+        width: 25%;
+    }
+    &_quatro {
+        width: 33.33%;
+    }
+    &_seis {
+        width: 50%;
+    }
+    &_gutters .col{
+        padding: 20px;
+    }
+    &:after {
+        clear: both;
+    }
+}

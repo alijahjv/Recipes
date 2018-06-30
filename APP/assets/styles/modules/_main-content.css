@@ -1,0 +1,22 @@
+.wrapper {
+    padding:20px;
+}
+.main-content {
+    h1 {
+        color: $unoColor;
+    }
+}
+.content-section {
+    height: 90vh;
+    p {
+        font-size: 20px;
+    }
+    &:nth-child(even){
+        background-color: $dosColor;
+        color: $unoColor;
+    }
+    &:nth-child(odd){
+        background-color: $unoColor;
+        color: $dosColor;
+    }
+}

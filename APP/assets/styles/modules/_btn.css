@@ -1,0 +1,10 @@
+.btn {
+
+@mixin atSmall {
+    &-nav {
+        background-color: $dosColor;
+        border-radius: 5px;
+        padding: 10px;
+    }
+}
+}

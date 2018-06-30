@@ -1,0 +1,32 @@
+.hero {
+	background-color: $dosColor;
+	width: 80%;
+    color: $unoColor;
+    height: 20vh;
+    &_content {
+        
+    }
+    &_img {
+        width: 12%;
+        float:left;
+    }
+}
+
+.hero_img::after {
+    clear:both;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo_text {
+    width: 30%;
+    display: inline-block;
+
+    @mixin atSmall {
+        width: 600px;
+        padding: 0 100px;
+        z-index: 8;
+    }
+}

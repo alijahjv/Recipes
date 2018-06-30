@@ -1,21 +1,20 @@
-body {
-	padding: 0;
-	background-image: url("bgdfood.svg");
-	background-repeat: repeat;
-	background-size: 150px;
-	color: f7f7f7;
-}
-header {
-	background-color: #FF0000;
-	width: 80%;
-	border-width: 0px 2px 2px 2px;
-	border-style: solid;
-	height: 14%;
-	margin: 0 auto;
-	position: fixed;
-	top: 0;
-	left: 10%;
-}
+@import "normalize.css";
+@import "base/_global";
+@import "base/_variables";
+@import "base/_mixins";
+@import "modules/_hero";
+@import "modules/_main-content";
+@import "modules/_btn";
+@import "modules/_row";
+
+
+
+/* This is the stylesheet:
+
+	Include new styles under global or modules
+
+*/
+
 header h1 {
 	color: #EAA521;
 	font-size: 3.5em;
@@ -28,38 +27,15 @@ header a {
 	text-decoration: none;
 }
 
-.headerimg {
+.hero_img {
 		width: 12%;
 		float:left;
 	}
+	.hero_img::after {
+		clear:both;
+	}
 
-/* Navigation  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-nav {
-	position: absolute;
-	bottom: 10%;
-	left: 10%;
-}
-nav li {
-	list-style-type: none;
-	float: left;
-}
-nav li a {
-	padding: 5px 10px 5px 2px;
-	background-color:#f7f7f7;
-	text-decoration: none;
-	color: #EA2621;
-	font-size: 20px;
-	font-weight: bold;
-	margin-right: 15px;
-	border: 1px solid;
-	border-left: 8.5px solid #EAA521;
-	border-radius: 10px;
-}
-nav li a:hover {
-	color: #94773F;
-	background: linear-gradient(rgba(200,200,200,0.7), #f7f7f7);
-}
 
 aside {
 	position: absolute;
